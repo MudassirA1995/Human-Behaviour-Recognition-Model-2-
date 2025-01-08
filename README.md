@@ -6,10 +6,10 @@ The Emotion Recognition App is a PyQt5-based GUI application designed to analyze
 
 ## Usecases 
 
-1)Mental Health Monitoring: Assists in identifying emotional states to provide real-time feedback for mental health applications.
-2)Customer Service: Can be used to gauge customer reactions and emotions during interactions.
-3)Educational Tools: Provides emotion tracking for interactive learning environments or presentations.
-4)Human-Computer Interaction: Enhances AI systems by adding emotional intelligence for personalized responses.
+1) **Mental Health Monitoring**: Assists in identifying emotional states to provide real-time feedback for mental health applications.
+2) **Customer Service**: Can be used to gauge customer reactions and emotions during interactions.
+3) **Educational Tools**: Provides emotion tracking for interactive learning environments or presentations.
+4) **Human-Computer Interaction**: Enhances AI systems by adding emotional intelligence for personalized responses.
 
 ## Source Code 
 
@@ -136,7 +136,6 @@ if __name__ == "__main__":
     window.show()
     sys.exit(app.exec_())
 
-
 ```
 
 ## Code Explanation 
@@ -144,20 +143,23 @@ if __name__ == "__main__":
 Class Definition:
 
 The EmotionRecognitionApp class inherits from QWidget and manages the GUI layout, video feed, and emotion detection logic.
+
 UI Setup:
 
-The user interface is created with PyQt5 components like QVBoxLayout, QLabel, QPushButton, and QProgressBar.
-A black and neon blue color theme is applied for an attractive look.
+The user interface is created with PyQt5 components like QVBoxLayout, QLabel, QPushButton, and QProgressBar. A black and neon blue color theme is applied for an attractive look.
+
 Camera Control:
 
 The toggle_camera method initializes the webcam using OpenCV and toggles the video feed on or off. It updates the button text accordingly.
+
 Emotion Detection:
 
-The detect_emotion method reads frames from the camera, flips them for a mirror effect, and passes them to the FER detector for analysis.
-Detected emotions and their probabilities are displayed in progress bars, and the dominant emotion is highlighted.
+The detect_emotion method reads frames from the camera, flips them for a mirror effect, and passes them to the FER detector for analysis. Detected emotions and their probabilities are displayed in progress bars, and the dominant emotion is highlighted.
+
 Face Highlighting:
 
 A rectangle is drawn around the detected face for visual feedback, enhancing the user experience.
+
 Cleanup:
 
 The closeEvent method ensures the webcam is released properly when the application is closed.
@@ -166,16 +168,22 @@ The closeEvent method ensures the webcam is released properly when the applicati
 
 FER (Facial Expression Recognition):
 
-Detects emotions such as angry, happy, sad, etc., from facial expressions in the video frames.
-Uses MTCNN for better face detection accuracy.
+Detects emotions such as angry, happy, sad, etc., from facial expressions in the video frames. Uses MTCNN for better face detection accuracy.
+
 OpenCV:
 
 Captures video from the webcam and processes the frames for display and analysis.
+
 PyQt5:
 
 Creates the graphical user interface, handles layouts, and manages user interactions.
+
 QtCore, QtGui:
 
 Provides additional classes for styling, image processing, and timer functionality.
+
+
+
+
 
 
