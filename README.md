@@ -183,6 +183,14 @@ QtCore, QtGui:
 Provides additional classes for styling, image processing, and timer functionality.
 
 
+## Application View 
+
+![Screenshot (557)](https://github.com/user-attachments/assets/72e7ef06-1f89-45b9-8370-571600b20c96)
+
+
+
+
+
 
 
 
